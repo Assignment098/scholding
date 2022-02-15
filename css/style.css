@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;800&amp;display=swap');
+*{
+    box-sizing: border-box;
+  }
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Roboto Condensed", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+body, div, li{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    border: 0px;
+}
+dir, menu, ol, ul {
+    list-style: none;
+}
+h1, h2, h3{
+    font-weight: 800;
+}
+img{
+    max-width: 100%;
+}
+ul {
+    margin-block-start: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.headerstyled_section{
+    background-image: url(../images/showcase.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 750px;
+}
+.abss {
+    max-width: 90%;
+    margin: 0px auto;
+}
+.acss {
+    width: 100%;
+    max-width: 1272px;
+    padding: 0px 20px;
+    margin: 0px auto;
+    position: relative;
+}
+.adss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.aess{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
+.aess li {
+    cursor: pointer;
+    color: rgb(225, 222, 221);
+    font-weight: 300;
+    margin-right: 54px;
+}
+.aess li.aess-nomargin{
+    margin-right: 0;
+}
+.aess img{
+    width: 60px;
+}
+.aess li a b {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.afss{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.afss li {
+    text-align: center;
+}
+.afss li:not(:last-child) {
+    margin-right: 24px;
+}
+.afss li a {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.afss li i, .afss li img {
+    margin-right: 15px;
+    width: 20px;
+}
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  .navbar.sticky{
+    background: #1b1b1b;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+  }
+  .navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .mob-logo {
+    margin-bottom: 14px;
+}
+  .mob-logo img{
+      width: 60px;
+      display: none;
+  }
+  .navbar .menu-list{
+    display: inline-flex;
+  }
+  .menu-list li{
+    list-style: none;
+  }
+
+  .menu-list li a:hover{
+    color: #007bff;
+  }
+  .banner{
+    background: url("banner.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .about{
+    padding: 30px 0;
+  }
+  .about .title{
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .about p{
+    padding-top: 20px;
+    text-align: justify;
+  }
+  .icon{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 15px;
+  }
+  .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+  }
+
+.cass {
+    margin: 60px auto 0px;
+}
+.cbss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+#minting .ccss, #about .cgss{
+    width: 40%;
+}
+
+.ccss {
+    width: 695px;
+    order: 1;
+}
+.cdss {
+    text-align: left;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 0.97;
+    text-shadow: -5px 0px #f9a41c;
+    color: #212121;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    width: 100%;
+    top: 0;
+}
+.cess {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: left;
+    margin-top: 30px;
+    width: 100%;
+}
+.cfss{
+    background-color: rgb(100, 19, 95);
+    border-radius: 12px;
+    max-width: 220px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px;
+    border: 0px;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.cfss:hover {
+    opacity: 0.8;
+}
+
+.cgss {
+    z-index: 1;
+    order: 2;
+    width: 521px;
+    display: flex;
+    height: 450px;
+    left: -85px;
+    align-items: center;
+    justify-content: center;
+}
+#minting .cgss, #about .ccss{
+    width: 60%;
+}
+.eass.ccss{
+    order: 2;
+}
+.eass .cess {
+    justify-content: end;
+}
+.edss.cgss{
+    order:1;
+}
+.eass .cdss{
+    text-align: right;
+}
+h2.ecss{
+    text-align: justify;
+}
+#roadmap h2.ecss{
+    text-align: center;
+}
+#roadmap .ebss{
+    width: 100%;
+    margin-left: 0;
+}
+.ebss {
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    width: 92%;
+    margin-left: auto;
+    z-index: 2;
+    flex-flow: row wrap;
+    -webkit-box-pack: end;
+}
+.herostyled_info.ebss h2 {
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.94;
+}
+.roadmap__section {
+    padding: 95px 0px 100px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin: 170px auto 0px;
+}
+
+.roadmap__section .container {
+    position: relative;
+    z-index: 1;
+  }
+.roadmap__section h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+.roadmap__section .col-lg-6.offset-lg-3 {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.roadmap__section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1320px;
+    margin: auto;
+}
+  .rdmp__block {
+    position: relative;
+  }
+  /* .rdmp__block::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+  } */
+  .rdmp__block::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 96%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: #faa41d;
+    box-shadow: -4px 1px 0 #bdbdbd;
+    border-radius: 5px;
+}
+
+  .roadmap_text {
+    padding-left: 120px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  /* .roadmap_text::after {
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -20px;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border: 5px solid #fff;
+    border-radius: 30%;
+    z-index: 1;
+  } */
+  .roadmap_text::after  {
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -20px;
+    width: 53px;
+    height: 11px;
+    background-color: #faa41d;
+    border: 5px solid #faa41d;
+    box-shadow: -8px 6px 0 #6c6c6c;
+    border-bottom: 36px solid rgb(250 164 29);
+    border-radius: 24%;
+    z-index: 3;
+    transform: skewX(24deg);
+}
+  .roadmap_text h3 {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .roadmap_text p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 40px;
+  }
+
+.roadmap__avatar1,
+.roadmap__avatar2 {
+  position: absolute;
+  right: 6%;
+  top: 62%;
+  width: 400px;
+  height: 400px;
+  background: url(../images/Attachment_1639425975-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.roadmap__avatar2 {
+  background-image: url(../images/img1-removebg-preview.png);
+  top: 3%;
+  left: 8%;
+}
+.fbss {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: block;
+}
+.fbss:hover {
+    background: rgb(206, 73, 166);
+}
+.fcss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 100%;
+    max-width: 1186px;
+    border-bottom: 1px solid rgb(62, 62, 62);
+    margin: 0px auto;
+    transition-duration: 0.3s;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+#faq .fcss{
+    max-width: 100%;
+}
+.fbss:hover .fcss {
+    border-bottom: 1px solid transparent;
+    color: rgb(0, 0, 0);
+}
+.fcss img {
+    width: 75px;
+}
+.fdss {
+    text-align: left;
+    width: 100%;
+}
+.fess {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 0.97;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 223px;
+    margin-top: 25px;
+}
+.ffss {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.94;
+}
+.fgss {
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    right: 0px;
+    z-index: 2;
+    text-align: center;
+}
+.fgss i {
+    max-width: 100%;
+    max-height: 110px;
+}
+.fgss span {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.55;
+    width: 100%;
+    display: block;
+}
+.gass {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+.gbss:not(:last-child) {
+    margin-bottom: 55px;
+}
+.partnerstyled_plan.gbss {
+    width: 35%;
+}
+.partnerstyled_plan.gbss img{
+    width: 100%;
+}
+.hass {
+    width: 253px;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 15px;
+    line-height: 1.45;
+}
+.hbss {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 0.97;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    width: 190px;
+}
+.iass {
+    position: relative;
+    margin: 90px 0px;
+    order: 1;
+}
+.ibss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.icss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.iass ul {
+    background-color: rgb(0, 0, 0);
+}
+.icss {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.icss li {
+    text-align: center;
+}
+.icss li:not(:last-child) {
+    margin-right: 24px;
+}
+.icss li a {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.acss .fa{
+    font-size: 22px;
+    background: #0cacdf;
+    color: #000;
+    border-radius: 3px;
+    width: 25px;
+    height: 21px;
+}
+.acss .socialstyled_wrapper img{
+    background: #0cacdf;
+    border-radius: 3px;
+    width: 25px;
+}
+
+.line {
+    width: 69%;
+    background-color: rgb(0, 0, 0);
+    padding-left: 30px;
+    order: 2;
+}
+hr{
+    width: 100%;
+    background: rgb(47 47 47);
+    border: 0;
+    height: 1px;
+}
+@media (min-width: 1185px){
+.aess li {
+    display: initial;
+}
+.afss li:not(:last-child) {
+    margin-right: 50px;
+}
+.cass {
+    margin: 170px auto 0px;
+}
+.cdss {
+    font-size: 92px;
+    margin-top: 50px;
+    width: auto;
+    position: initial;
+    top: initial;
+}
+.cess {
+    margin-top: 65px;
+    -webkit-box-pack: start;
+    justify-content: start;
+}
+.cess a:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 0px;
+}
+.fcss {
+    height: 235px;
+    padding: 0px;
+}
+.fcss img {
+    width: 107px;
+}
+.fdss {
+    width: 731px;
+    margin-right: 160px;
+}
+#faq .fdss{
+    width: 100%;
+    padding: 0 20px;
+}
+.fess {
+    margin-bottom: 31px;
+    font-size: 22px;
+    width: initial;
+    margin-top: 0px;
+}
+.ffss {
+    width: 580px;
+}
+#faq .ffss{
+    width: 100%;
+}
+.fgss {
+    width: 90px;
+    margin-top: 25px;
+    position: initial;
+    top: 0px;
+}
+.fgss i {
+    width: 107px;
+}
+.fgss span {
+    font-size: 20px;
+}
+.gass {
+    margin-top: 87px;
+    -webkit-box-pack: justify;
+    justify-content: flex-start;
+}
+.gbss:not(:last-child) {
+    margin-bottom: 0px;
+}
+.hass {
+    width: auto;
+    margin-left: 25px;
+    line-height: 1;
+    margin-bottom: 53px;
+}
+.hdss.fbss {
+    width: 100%;
+}
+.hbss {
+    font-size: 42px;
+    width: initial;
+}
+.hdss {
+    width: 100%;
+}
+.iass {
+    margin: 170px 0px;
+}
+.ibss {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.icss {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.iass ul {
+    margin-bottom: 0px;
+    order: 2;
+    padding-left: 30px;
+}
+.icss li:not(:last-child) {
+    margin-right: 50px;
+}
+.line {
+    order: 2;
+    padding-left: 0px;
+}
+}
+@media (max-width: 1185px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .mob-logo{
+        display: flex;
+    }
+    .mob-logo img {
+        display: flex;
+        margin-bottom: 14px;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: rgb(0, 0, 0);
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+      margin-right: 0;
+    }
+    
+  }
+  @media (max-width: 600px){
+    #minting .cgss, #about .ccss, #minting .ccss, #about .cgss{
+        width: 100%;
+    }
+    .eass.ccss {
+        order: 1;
+    }
+    .edss.cgss {
+        order: 2;
+    }
+    .eass .cdss, .cdss {
+        text-align: center;
+    }
+    .eass .cess , .cess{
+        justify-content: center;
+    }
+    .cess {
+        margin-bottom: 28px;
+    }
+    .cdss {
+        font-size: 42px;
+    }
+    .ebss {
+        width: 100%;
+    }
+    .roadmap__section {
+        padding: 0;
+        margin: 60px auto 0;
+    }
+    .hbss{
+        width: 100%;
+    }
+    .roadmap__section .col-lg-6.offset-lg-3 {
+        flex: 0 0 auto;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }
+  @media (max-width: 426px){
+  .navbar .menu-list{
+    max-width: 100%;
+  }
+  .afss p{
+    display: none;
+}
+}
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 27px;
+    }
+    .hbss {
+        font-size: 22px;
+        line-height: 1;
+    }
+    .roadmap_text h3 {
+        line-height: 1;
+    }
+    .rdmp__block::after {
+        height: 94%;
+    }
+    .roadmap_text::after {
+        left: -25px;
+        top: -20px;
+        width: 39px;
+        height: 0px;
+    }  
+  }
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .roadmap__avatar1,
+  .roadmap__avatar2 {
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 0%;
+    width: 160px;
+    height: 160px;
+    background-image: url(./images/Attachment_1639425975-removebg-preview.png);
+    background-size: cover;
+  }
+  .roadmap__avatar1 {
+    display: none;
+  }
+  
+  .rdmp__block {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .roadmap_text {
+    padding-left: 0px;
+  }
+  .roadmap_text h3 {
+    margin-bottom: 20px;
+    padding-left: 40px;
+  }
+  .roadmap_text p {
+    padding-left: 25px;
+  }
+  .roadmap_text.sm::after {
+    width: 40px;
+  }
+  .roadmap_text.sm h3 {
+    padding-left: 50px;
+  }
+  
+  
+}
