@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5 7 9);
     color: rgb(255, 255, 255);
     font-size: 14px;
     line-height: 1;
@@ -50,6 +50,18 @@ a {
     max-width: 90%;
     margin: 0px auto;
 }
+div#charity .abss {
+        margin: 0 0;
+}
+div#charity .acss {
+    padding-right: 0;
+}
+div#charity h3.partnerstyled_title{
+    text-align: center;
+    padding-right: 0;
+    font-size: 25px;
+    margin-top: 10px;
+}
 .acss {
     width: 100%;
     max-width: 1272px;
@@ -87,6 +99,7 @@ a {
 }
 .aess img{
     width: 60px;
+    height: 60px;
 }
 .aess li a b {
     font-weight: bold;
@@ -127,7 +140,7 @@ a {
     transition: all 0.3s ease;
   }
   .navbar.sticky{
-    background: #1b1b1b;
+    background: #040505;
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
   }
   .navbar .content{
@@ -142,10 +155,15 @@ a {
     text-decoration: none;
   }
   .mob-logo {
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    min-height: auto;
 }
   .mob-logo img{
-      width: 60px;
+      align-self: flex-start;
+      width: 40px;
+      height: 40px;
+      min-height: auto;
+      max-width: 100%;
       display: none;
   }
   .navbar .menu-list{
@@ -198,7 +216,7 @@ a {
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: flex-start;
 }
 #minting .ccss, #about .cgss{
     width: 40%;
@@ -209,12 +227,12 @@ a {
     order: 1;
 }
 .cdss {
+    margin-top: 0;
     text-align: left;
     font-size: 52px;
     font-weight: 800;
     line-height: 0.97;
-    text-shadow: -5px 0px #f9a41c;
-    color: #212121;
+    color: #fff;
     text-transform: uppercase;
     font-stretch: condensed;
     width: 100%;
@@ -315,7 +333,7 @@ h2.ecss{
 }
 .roadmap__section {
     padding: 95px 0px 100px;
-    background: rgb(0, 0, 0);
+    background: rgb(5 7 9);
     color: rgb(255, 255, 255);
     position: relative;
     margin: 170px auto 0px;
@@ -428,9 +446,10 @@ h2.ecss{
 }
 .roadmap__avatar2 {
   background-image: url(../images/img1-removebg-preview.png);
-  top: 3%;
+  top: 17%;
   left: 8%;
 }
+
 .fbss {
     width: 100%;
     transition-duration: 0.3s;
@@ -506,18 +525,19 @@ h2.ecss{
     display: block;
 }
 .gass {
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-flow: row wrap;
     -webkit-box-pack: center;
     justify-content: center;
     align-items: flex-start;
+    
 }
 .gbss:not(:last-child) {
     margin-bottom: 55px;
 }
 .partnerstyled_plan.gbss {
-    width: 35%;
+    width: 30%;
 }
 .partnerstyled_plan.gbss img{
     width: 100%;
@@ -538,7 +558,7 @@ h2.ecss{
     line-height: 0.97;
     text-transform: uppercase;
     margin-bottom: 25px;
-    width: 190px;
+    width: 100%;
 }
 .iass {
     position: relative;
@@ -564,7 +584,7 @@ h2.ecss{
     position: relative;
 }
 .iass ul {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5 7 9);
 }
 .icss {
     display: flex;
@@ -604,7 +624,7 @@ h2.ecss{
 
 .line {
     width: 69%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5 7 9);
     padding-left: 30px;
     order: 2;
 }
@@ -614,6 +634,38 @@ hr{
     border: 0;
     height: 1px;
 }
+/* Faq */
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
 @media (min-width: 1185px){
 .aess li {
     display: initial;
@@ -626,7 +678,7 @@ hr{
 }
 .cdss {
     font-size: 92px;
-    margin-top: 50px;
+    margin-top: 0;
     width: auto;
     position: initial;
     top: initial;
@@ -649,7 +701,7 @@ hr{
 }
 .fdss {
     width: 731px;
-    margin-right: 160px;
+    margin-right: 0;
 }
 #faq .fdss{
     width: 100%;
@@ -680,9 +732,9 @@ hr{
     font-size: 20px;
 }
 .gass {
-    margin-top: 87px;
+    margin-top: 40px;
     -webkit-box-pack: justify;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .gbss:not(:last-child) {
     margin-bottom: 0px;
@@ -727,16 +779,25 @@ hr{
     padding-left: 0px;
 }
 }
+@media (max-width: 1496px) {
+.roadmap__avatar2 {
+    left: 0%;
+}
+}
 @media (max-width: 1185px) {
     body.disabled{
       overflow: hidden;
     }
     .mob-logo{
         display: flex;
+        min-height: auto;
     }
     .mob-logo img {
         display: flex;
         margin-bottom: 14px;
+        align-self: flex-start;
+        min-height: auto;
+        max-width: 100%;
     }
     .icon{
       display: block;
@@ -763,6 +824,20 @@ hr{
     .navbar .menu-list li{
       margin-top: 45px;
       margin-right: 0;
+    }
+    .roadmap__avatar1, .roadmap__avatar2 {
+        background-size: 319px;
+        
+    }
+    .roadmap__avatar1 {
+        right: 0%;
+    }
+    
+  }
+  @media (max-width: 1012px){
+    .roadmap__avatar1, .roadmap__avatar2 {
+        background-size: 270px;
+        width: 287px;
     }
     
   }
@@ -818,6 +893,9 @@ hr{
     .navbar .logo a{
       font-size: 27px;
     }
+    .roadmap__avatar1, .roadmap__avatar2 {
+    display: none;
+    }
     .hbss {
         font-size: 22px;
         line-height: 1;
@@ -826,7 +904,7 @@ hr{
         line-height: 1;
     }
     .rdmp__block::after {
-        height: 94%;
+        height: 93%;
     }
     .roadmap_text::after {
         left: -25px;
@@ -834,6 +912,11 @@ hr{
         width: 39px;
         height: 0px;
     }  
+  
+.navbar {
+    overflow: hidden;
+    height: 69px;
+}
   }
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .roadmap__avatar1,
@@ -873,4 +956,9 @@ hr{
   }
   
   
+}
+@media (max-width: 319px) {
+.mob-logo img{
+      display: none !important;
+  }
 }
